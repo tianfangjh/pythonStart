@@ -14,3 +14,18 @@ for n in range(20):
     if n % 2 == 0:
         continue
     print(n, end = ' ')
+
+print('\n')
+
+flag = True
+n = int(input())
+
+for s in range(2, n - 1):
+    if n % s == 0:
+        flag = False
+        print("no\n")
+        break
+else:
+    print('yes\n')
+
+
